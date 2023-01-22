@@ -25,7 +25,15 @@ header {
     align-items: center;   
     box-sizing: border-box;
     border-radius: 1em;
-}    
+}  
+
+h1 {
+    font-size: 50px;
+}
+
+#nombre {
+    text-align: center;   
+}
 
 .contenedor{
     width: 80%;
@@ -72,6 +80,11 @@ aside div{
     flex-direction: column;
 }
 
+.imagenRedes{
+    width: 30px;
+    height: 30px;
+}
+
 #contacto {
     display: flex;
     flex-direction: column;
@@ -79,6 +92,10 @@ aside div{
 }
 
 /*Diseño formulario contacto*/
+
+#formulario{
+    display: none;
+}
 
 .form{
     width: 80%;
@@ -138,21 +155,15 @@ aside div{
     
 }
 
-/*Diseño imagenes*/
+/*Footer*/
 
-.imagenRedes{
-    width: 30px;
-    height: 30px;
-}
-
-/*Diseño de texto*/
-
-h1 {
-    font-size: 50px;
-}
-
-#nombre {
-    text-align: center;   
+footer{
+    display: flex;
+    width: 78%;
+    justify-content: space-between;
+    margin-right: 30px;
+    box-sizing: border-box;
+    padding: 1%;
 }
 
 /*Diseño dark-mode*/
@@ -192,6 +203,30 @@ h1 {
 .dark-mode{
     background-color: #252525;
     color: #0543968c;
+}
+
+/*Botones ver y ocultar form*/
+
+#mostrarForm{
+    display: block;
+}
+
+#ocultarForm{
+    display: none;
+}
+
+.btn{
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #0f658d;
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    padding: 0.7em 0 ;
+    border-radius: 0.4em;
+    cursor: pointer;
+    font-weight: 400;
+    width: 25%;
 }
 
 /*full responsive*/
